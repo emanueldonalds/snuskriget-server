@@ -1,0 +1,10 @@
+server.port: 9000
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        opaque:
+          introspection-uri: http://localhost:8080/auth/realms/snuskriget/protocol/openid-connect/token/introspect
+          introspection-client-id: snuskriget-server
+          introspection-client-secret: abdd5c23-395e-434f-91f7-7e88805a6f53
