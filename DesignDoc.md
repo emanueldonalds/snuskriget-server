@@ -35,11 +35,20 @@ These events may affect the drug prices positively or negatively.
     
 ## Software design
 
-The interactive parts of the game will exist as a web page where running on AngularJS
+The interactive parts of the game will exist as a web page running on AngularJS. The front end will call the back end when buying/selling. The back end will handle transactions when buying/selling. This enables a vision of multiplayer. 
 
 ### Back end
 
-The
+Spring boot application with a REST interface for managing resources.
 
+Secured with spring security.
 
 ### Front end
+
+AngularJS single page application handling interaction with the user.
+
+Might require the user to log in before playing.
+
+### Authentication
+
+Keycloak authn/authz for managing user logins and issuing of tokens.
