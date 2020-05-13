@@ -11,7 +11,7 @@ The player is able to travel to a predefined set of locations. When the player t
 Random events may occur on each time the player arrives to a location such as police razzias, thug encounters and more.
 These events may affect the drug prices positively or negatively.
 
-## Locations
+### Locations
 
 * Strandäs
 * Malmö
@@ -21,15 +21,25 @@ These events may affect the drug prices positively or negatively.
 * Viking Salmonella
 * Christiania
 
-# Things to do at a location
+### Things to do at a location
 
 * Buy items
 * Sell items
 * Travel
 
-# Events which may occur at arrival to destination
+### Events which may occur on arrival to destination
 
 * Border guard
     * Only occurs when traveling in to finland
     * If the dealer carries more than 4 snus items, there is a chance that the border guard takes it.
     
+## Software design
+
+The interactive parts of the game will exist as a web page where running on AngularJS
+
+### Back end
+
+The
+
+
+### Front end
