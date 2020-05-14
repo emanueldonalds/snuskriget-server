@@ -1,8 +1,6 @@
 package ax.snuskriget.server.application;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -26,8 +24,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .authorizeRequests(authorizeRequests ->
                 authorizeRequests
                     //.antMatchers(HttpMethod.GET, "//**").hasAuthority("SCOPE_message:read")
-                    .antMatchers(HttpMethod.GET, "/home").permitAll()
-                    .anyRequest().authenticated()
+                    //.antMatchers(HttpMethod.GET, "/**").permitAll()
+                    .anyRequest().permitAll() // Permit all until authentication is in place in front end
             )
             .oauth2ResourceServer(oauth2ResourceServer ->
                 oauth2ResourceServer
