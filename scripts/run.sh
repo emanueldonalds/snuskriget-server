@@ -1,4 +1,9 @@
 #!/bin/bash
+appName="snuskriget-server"
+appVersion="1.0.0";
+
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
+echo $parent_path
 cd "$parent_path"
-nohup java -jar "./../build/libs/snuskriget-server-1.0.0.jar"
+
+java -jar ./../build/libs/$appName-$appVersion.jar </dev/null &>/dev/null &
