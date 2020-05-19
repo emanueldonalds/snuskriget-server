@@ -17,6 +17,7 @@ public class ItemsController {
         final List<Item> items = new ArrayList<>();
         items.add(new Item("Snorkfröken"));
         items.add(new Item("Muminpappan"));
+        items.add(new Item("Snusmumriken"));
         return items;
     }
 }
