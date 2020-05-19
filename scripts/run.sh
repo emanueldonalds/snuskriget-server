@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -jar run snuskriget-server-1.0.0.jar
+java -jar ./../build/libs/snuskriget-server-1.0.0.jar
